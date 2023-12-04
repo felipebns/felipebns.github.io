@@ -1,0 +1,64 @@
+.voltar{
+    height: 80%;
+    display: flex;
+    justify-content: start;
+    position:absolute;
+    top: 0.3rem;
+    left:0.1rem;
+}
+
+header{
+    border: 0.1rem black solid;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+
+.borda{
+    border: 0.1rem black solid;
+}
+
+li{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    overflow: scroll;
+}
+
+.img1{
+    height: 70%;
+    width:85%;
+}
+
+.home{
+    position: absolute;
+    height: 80%;
+    top: 0.3rem;
+    right: 0.1rem;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+}

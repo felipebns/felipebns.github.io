@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css_telainvestir.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/invest.js"></script>
+    <title>Investir</title>
+</head>
+<body>
+    <header>
+        <ul class="linha space-bet">
+            <li>
+                <a href="tela_inicial.html">
+                    <img src="img/seta.png" alt="Voltar" class="voltar">
+                </a>
+            </li>
+        </ul>
+        <section>
+            <h1 class="centralizar">Saldo: -------</h1>
+        </section>
+    </header>
+    <main class="coluna">
+        <h2 class="centralizar"> Comprar ações</h2>
+        <ol class="linha space-around">
+            <li class="imagens_do_main" id="cielo_img">
+                <a href="Tela_encaminharCorretora.html">
+                    <img src="img/invest/cielo.png" alt="Investir" class="cielo">
+                </a>
+            </li>
+            <li class="imagens_do_main" id="itau_img">
+                <a href="Tela_encaminharCorretora.html">
+                    <img src="img/invest/itau.png" alt="Investir" class="itau">
+                </a>
+            </li>
+            
+        </ol>
+        <ol class="linha space-around">
+            <li class="imagens_do_main" id="petrobras_img">
+                <a href="Tela_encaminharCorretora.html">
+                    <img src="img/invest/petrobras.png" alt="Investir" class="petro">
+                </a>
+            </li>
+            <li class="imagens_do_main" id="vale_img">
+                <a href="Tela_encaminharCorretora.html">
+                    <img src="img/invest/vale.png" alt="Investir" class="vale">
+                </a>
+            </li>
+        </ol>
+    </main>
+    <footer class="centralizar coluna">
+        <h2>
+            Filtrar por...
+        </h2>
+        <form class="centralizar">
+            <input type="radio" id="Crescente" value="Crescente">
+            <label>Crescente</label><br>
+            <input type="radio" id="Decrescente" value="Decrescente">
+            <label>Decrescente</label><br>
+            <input type="radio" id="Neutro" value="Neutro">
+            <label>Nulo</label><br>
+            <input type="reset" value="Reiniciar" id="Reset">          
+          </form>
+    </footer>
+</body>
+</html>

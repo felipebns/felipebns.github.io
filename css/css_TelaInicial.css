@@ -1,0 +1,136 @@
+header{
+    border: 0.1rem black solid;
+    background-color: rgb(133,187,101);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.seus_invest{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem black solid;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(133, 187, 101);
+}
+
+.acao{
+    display: none;
+    height: 30%;
+    width: 40%;
+    padding-bottom: 1rem;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.space_bet{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+
+.invst{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    height: 70%;
+    width: 80%;
+    max-height: 100px;
+    max-width: 350px;
+}
+
+.saiba_mais{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    height: 70%;
+    width: 90%;
+    max-width: 400px;
+    max-height: 100px;
+}
+
+.vinc{
+    height: 70%;
+    width: 90%;
+    margin: 1rem;
+}
+
+footer{
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chat{
+    height: 70%;
+    width: 100%;
+}
+
+.pop_invs{
+    height: 30%;
+    width: 10%;
+    margin-bottom: 5rem;
+}
+
+.pop_org{
+    height: 30%;
+    width: 10%;
+    margin-top: 4rem;
+}
+
+#invest_img{
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.pop_vinc{
+    height: 50%;
+    width: 20%;
+}
+
+.pop_yt{
+    height: 40%;
+    width: 15%;
+    margin-left: -1.5rem;
+}
+
+#add_acao{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.novo{
+    height: 10%;
+    width: 30%;
+}
+
+#orgfin_img{
+    max-width: 200px;
+    max-height: 130px;
+}

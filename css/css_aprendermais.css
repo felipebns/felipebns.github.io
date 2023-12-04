@@ -1,0 +1,70 @@
+header{
+    border: 0.1rem black solid;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+}
+
+.voltar{
+    position: absolute;
+    top: 1.5rem;
+    left: 0.5rem;
+    height: 40%;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    background-color: rgb(133,187,101);
+    margin-top: 4rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    width: 50%;
+}
+
+.play{
+    position: relative;
+    background-color: rgb(5,197,15);
+    width: 100%;
+    margin: 1rem;
+    min-height: 50px;
+}
+
+.imgplay{
+    position: absolute;
+    width: 70%;
+    top: 0.2rem;
+    left: 0.5rem;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+
+.org{
+    margin-top: 3rem;
+    margin-left: -2rem;
+    width: 130%;
+}
+
+.home{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    right: 1rem;
+    top: -3rem;
+}
+
+.excel{
+    height: 40%;
+    width: 40%;
+}

@@ -1,0 +1,106 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.voltar{
+    width: 10%;
+    display: flex;
+    justify-content: start;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.home{
+    height: 60%;
+    width: 50%;
+    margin-left: 4rem;
+}
+
+.space-bet{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+section{
+    border: 0.1rem solid black;
+    background-color: rgb(133,187,101);
+    width: 70%;
+    margin-left: 4rem;
+    justify-self: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graf{
+    height: 70%;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.encaminhar{
+    height: 100%;
+    width: 80%;
+    max-width: 200px;
+    margin-left: 0.7rem;
+}
+
+h2{
+    background-color: rgb(25,192,0);
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    border: 0.1rem solid black;
+    width: 60%;
+    margin: 1rem;
+}
+
+h3{
+    background-color: rgb(25,192,0);
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    border: 0.1rem solid black;
+    width: 60%;
+    margin: 1rem;
+
+}
+
+h4{
+    background-color: rgb(25,192,0);
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    border: 0.1rem solid black;
+    width: 60%;
+    margin: 1rem;
+}
+
+.pop_corret{
+    height: 10%;
+    width: 10%;
+}
