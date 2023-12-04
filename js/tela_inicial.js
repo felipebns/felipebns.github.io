@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     //Pop up INVESTIR
     invest_img = document.querySelector("#invest_img")
-    invest_img.addEventListener("mouseover", function(event){
+    invest_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_invs")
         img.src = "img/investir_popup.jpg";
         invest_img.appendChild(img);
     })
 
-    invest_img.addEventListener("mouseout", function(event){
+    invest_img.addEventListener("touchend", function(event){
         img = invest_img.querySelector('.pop_invs')
         img.remove()
     })
 
     //Pop up Vídeos/Org. Fin
     orgfin_img = document.querySelector("#orgfin_img")
-    orgfin_img.addEventListener("mouseover", function(event){
+    orgfin_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img2 = document.createElement('img');
         img.classList.add("pop_org")
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         orgfin_img.appendChild(img2);
     })
 
-    orgfin_img.addEventListener("mouseout", function(event){
+    orgfin_img.addEventListener("touchend", function(event){
         img = orgfin_img.querySelector('.pop_org')
         img2 = orgfin_img.querySelector('.pop_yt')
         img.remove()
@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Pop up Vincular conta
     vinc_img = document.querySelector("#vinc_img")
-    vinc_img.addEventListener("mouseover", function(event){
+    vinc_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_vinc")
         img.src = "img/vincular_popup.png";
         vinc_img.appendChild(img);
     })
 
-    vinc_img.addEventListener("mouseout", function(event){
+    vinc_img.addEventListener("touchend", function(event){
         img = vinc_img.querySelector('.pop_vinc')
         img.remove()
     })

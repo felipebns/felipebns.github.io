@@ -120,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Verificando se a conta foi vinculada
     user = localStorage.getItem('user')
-    console.log(user)
     if (user != null){
         h1 = document.querySelector('h1')
         h1.innerHTML = 'Saldo: R$999.850,56'
