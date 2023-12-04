@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Pop up corretora
     corret_img = document.querySelector("#corret_img")
-    corret_img.addEventListener("mouseover", function(event){
+    corret_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_corret")
         img.src = "img/fechar_img.png";
         corret_img.append(img);
     })
 
-    corret_img.addEventListener("mouseout", function(event){
+    corret_img.addEventListener("touchend", function(event){
         img = corret_img.querySelector('.pop_corret')
         img.remove()
     })

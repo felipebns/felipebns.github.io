@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     //Pop up organização
     org = document.querySelector("#org")
-    org.addEventListener("mouseover", function(event){
+    org.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("excel")
         img.src = "img/imagem_org.jpg";
         org.appendChild(img);
     })
 
-    org.addEventListener("mouseout", function(event){
+    org.addEventListener("touchend", function(event){
         img = org.querySelector('.excel')
         img.remove()
     })

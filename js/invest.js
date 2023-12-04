@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     //Pop up cielo 
     cielo_img = document.querySelector("#cielo_img")
-    cielo_img.addEventListener("mouseover", function(event){
+    cielo_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_cielo")
         img.src = "img/check_popup.jpg";
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cielo_img.appendChild(img2);
     })
 
-    cielo_img.addEventListener("mouseout", function(event){
+    cielo_img.addEventListener("touchend", function(event){
         img = cielo_img.querySelector('.pop_cielo')
         img2 = cielo_img.querySelector('.pop_cielo2')
         img.remove()
@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Pop up itaú
     itau_img = document.querySelector("#itau_img")
-    itau_img.addEventListener("mouseover", function(event){
+    itau_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_itau")
         img.src = "img/check_popup.jpg";
         itau_img.appendChild(img);
     })
 
-    itau_img.addEventListener("mouseout", function(event){
+    itau_img.addEventListener("touchend", function(event){
         img = itau_img.querySelector('.pop_itau')
         img.remove()
     })
@@ -47,14 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Pop petrobras
     petrobras_img = document.querySelector("#petrobras_img")
-    petrobras_img.addEventListener("mouseover", function(event){
+    petrobras_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_pt")
         img.src = "img/dec_popup.png";
         petrobras_img.appendChild(img);
     })
 
-    petrobras_img.addEventListener("mouseout", function(event){
+    petrobras_img.addEventListener("touchend", function(event){
         img = petrobras_img.querySelector('.pop_pt')
         img.remove()
     })
@@ -67,14 +67,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Pop vale
     vale_img = document.querySelector("#vale_img")
-    vale_img.addEventListener("mouseover", function(event){
+    vale_img.addEventListener("touchstart", function(event){
         img = document.createElement('img');
         img.classList.add("pop_vale")
         img.src = "img/neutro_pop.png";
         vale_img.appendChild(img);
     })
 
-    vale_img.addEventListener("mouseout", function(event){
+    vale_img.addEventListener("touchend", function(event){
         img = vale_img.querySelector('.pop_vale')
         img.remove()
     })
