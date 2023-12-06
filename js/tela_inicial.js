@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Verificando se foi completo uma ação
     fechou = localStorage.getItem('fim')
-    console.log(fechou)
     acao = localStorage.getItem('ação')
     if (fechou = true && acao != null){
         fechou = false
@@ -68,5 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img.classList.add('novo')
         img.src = "img/invest/"+acao+'.png'
         ac.appendChild(img)
+    }else if(fechou = null){
+        fecou=false
     }
 })
