@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         img2.classList.add("pop_cielo2")
         img2.src = "img/check_popup.jpg";
         cielo_img.appendChild(img2);
+
+        //Lembrando qual ação foi clicada
+        acao = 'cielo'
+        localStorage.setItem('ação', acao)
     })
 
     cielo_img.addEventListener("touchend", function(event){
@@ -17,12 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         img2 = cielo_img.querySelector('.pop_cielo2')
         img.remove()
         img2.remove()
-    })
-    
-    //Lembrando qual ação foi clicada
-    cielo_img.addEventListener("click", function(event){
-        acao = 'cielo'
-        localStorage.setItem('ação', acao)
     })
 
     //Pop up itaú
@@ -32,17 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
         img.classList.add("pop_itau")
         img.src = "img/check_popup.jpg";
         itau_img.appendChild(img);
+
+        //Lembrando qual ação foi clicada
+        acao = 'itau'
+        localStorage.setItem('ação', acao)
     })
 
     itau_img.addEventListener("touchend", function(event){
         img = itau_img.querySelector('.pop_itau')
         img.remove()
-    })
-
-    //Lembrando qual ação foi clicada
-    itau_img.addEventListener("click", function(event){
-        acao = 'itau'
-        localStorage.setItem('ação', acao)
     })
 
     //Pop petrobras
@@ -52,17 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
         img.classList.add("pop_pt")
         img.src = "img/dec_popup.png";
         petrobras_img.appendChild(img);
+
+        //Lembrando qual ação foi clicada
+        acao = 'petrobras'
+        localStorage.setItem('ação', acao)
     })
 
     petrobras_img.addEventListener("touchend", function(event){
         img = petrobras_img.querySelector('.pop_pt')
         img.remove()
-    })
-
-    //Lembrando qual ação foi clicada
-    petrobras_img.addEventListener("click", function(event){
-        acao = 'petrobras'
-        localStorage.setItem('ação', acao)
     })
 
     //Pop vale
@@ -72,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
         img.classList.add("pop_vale")
         img.src = "img/neutro_pop.png";
         vale_img.appendChild(img);
+
+        //Lembrando qual ação foi clicada
+        acao = 'vale'
+        localStorage.setItem('ação', acao)
     })
 
     vale_img.addEventListener("touchend", function(event){
@@ -79,23 +77,17 @@ document.addEventListener('DOMContentLoaded', function() {
         img.remove()
     })
 
-    //Lembrando qual ação foi clicada
-    vale_img.addEventListener("click", function(event){
-        acao = 'vale'
-        localStorage.setItem('ação', acao)
-    })
-
     //Filtro de ações
     cresc = document.querySelector('#Crescente')
 
-    cresc.addEventListener('click', function(event) {
+    cresc.addEventListener('touchstart', function(event) {
         petrobras_img.style.display = 'none'
         vale_img.style.display = 'none'
     })
 
     decresc = document.querySelector('#Decrescente')
 
-    decresc.addEventListener('click', function(event) {
+    decresc.addEventListener('touchstart', function(event) {
         cielo_img.style.display = 'none'
         vale_img.style.display = 'none'
         itau_img.style.display = 'none'
@@ -103,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     neutro = document.querySelector('#Neutro')
 
-    Neutro.addEventListener('click', function(event) {
+    Neutro.addEventListener('touchstart', function(event) {
         cielo_img.style.display = 'none'
         petrobras_img.style.display = 'none'
         itau_img.style.display = 'none'
@@ -111,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     reset = document.querySelector('#Reset')
 
-    reset.addEventListener('click', function(event){
+    reset.addEventListener('touchstart', function(event){
         cielo_img.style.display = ''
         petrobras_img.style.display = ''
         itau_img.style.display = ''

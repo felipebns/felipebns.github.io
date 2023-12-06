@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //Verificando se foi completo uma ação
     fechou = localStorage.getItem('fim')
     acao = localStorage.getItem('ação')
-    if (fechou = true){
+    if (fechou = true && acao !=null){
         fechou = false
         ac = document.querySelector('#add_acao')
         img = document.createElement('img')
