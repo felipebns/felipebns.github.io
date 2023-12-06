@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let fechou = false
     botao = document.querySelector('#fechar')
     botao.addEventListener('click', function(event){
-        let fechou = 'comprou'
+        fechou = true
         localStorage.setItem('fim', fechou)
     })
 })
